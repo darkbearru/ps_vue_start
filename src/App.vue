@@ -2,7 +2,7 @@
 </script>
 
 <template>
-	{{ new Date() }}
+	{{ new Date().toLocaleString() }}
 </template>
 
 <style scoped>
