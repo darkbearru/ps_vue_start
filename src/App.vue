@@ -1,9 +1,8 @@
 <script setup>
-const now = new Date();
 </script>
 
 <template>
-	{{ now }}
+	{{ new Date() }}
 </template>
 
 <style scoped>
