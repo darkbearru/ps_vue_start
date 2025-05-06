@@ -1,9 +1,17 @@
 <script setup>
+
+const time = new Date().toLocaleString();
+
 </script>
 
 <template>
-	{{ new Date().toLocaleString() }}
+
+	<main>
+		{{ time }}
+	</main>
+
 </template>
+
 
 <style scoped>
 
