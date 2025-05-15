@@ -6,12 +6,11 @@ const time = new Date().toLocaleString();
 
 <template>
 
-	<main>
+	<div>
 		{{ time }}
-	</main>
+	</div>
 
 </template>
-
 
 <style scoped>
 
