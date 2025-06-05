@@ -1,17 +1,19 @@
 <script setup>
-
-const time = new Date().toLocaleString();
-
+import DefaultButton from "./components/DefaultButton.vue";
 </script>
 
 <template>
-
-	<div>
-		{{ time }}
-	</div>
-
+	<main>
+		<DefaultButton color="#008BFE">
+			Начать игру
+		</DefaultButton>
+	</main>
 </template>
 
 <style scoped>
-
+	main {
+		display: grid;
+		place-items: center;
+		min-height: 100vh;
+	}
 </style>
