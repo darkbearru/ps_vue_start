@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import ApplyIcon from './icons/ApplyIcon.vue';
+
 const { index, word } = defineProps({ index: Number, word: String });
 
 const emit = defineEmits(['turnOn', 'changeStatus']);
@@ -15,7 +17,8 @@ const changeStatus = () => emit('changeStatus');
 			<div class="border-label">{{ index }}</div>
 			<div class="word">{{ word }}</div>
 			<div class="border-buttons">
-				<div class="label">перевернуть</div>
+				<button class="turn-on__label" @click="turnOn">перевернуть</button>
+				<button><ApplyIcon @click="changeStatus"/></button>
 			</div>
 		</div>
 	</div>
@@ -59,7 +62,12 @@ const changeStatus = () => emit('changeStatus');
 	padding: 0 4px;
 	background-color: var(--color-primary-inverted);
 }
-.label {
+.border-buttons button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.turn-on__label {
 	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 3px;

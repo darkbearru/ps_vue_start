@@ -6,7 +6,7 @@ import TheScore from './TheScore.vue';
 <template>
 	<header class="header">
 		<h1>Запомни слово</h1>
-		<TheScore></TheScore>
+		<TheScore :score="100"></TheScore>
 	</header>
 </template>
 
